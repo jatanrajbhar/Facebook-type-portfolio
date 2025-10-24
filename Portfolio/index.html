@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Replace with Facebook-like font if needed -->
+    <style>
+      @import 'C:\Users\rashm\OneDrive\Documents\face port\style.css';
+      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\cover.jpg';
+      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\jatank.jpeg';
+      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\log.png';
+    </style>
+    <title>port</title>
+  </head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <img src="images/logo.png" alt="Portfolio Logo" class="logo" />
+      <div class="search-box">
+        <input type="search" placeholder="Search portfolio..." id="globalSearch" />
+      </div>
+    </div>
+    <nav class="topbar-right">
+      <div class="profile-short">
+        <img src="images/jatank.jpeg" alt="Jatan" />
+        <span>Jatan Rajbhar</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+    <section class="cover-area">
+      <img src="images/cover2.png" alt="Cover" class="cover-photo" />
+      <div class="cover-controls">
+        <button class="btn small">Edit Cover</button>
+      </div>
+      <div class="profile-card">
+        <img class="avatar" src="images/jatank.jpeg" alt="profile" />
+        <div class="profile-info">
+          <h1>Jatan Rajbhar</h1>
+          <p class="muted">B.Sc. IT Graduate · System Analyst Intern · Data & Web</p>
+          <div class="action-row">
+            <button id="messageBtn" class="btn primary">Message</button>
+            <button id="followBtn" class="btn outline">Connect</button>
+            <button class="btn icon">⋯</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-wrap">
+      <aside class="left-col">
+        <div class="card about">
+          <h3>About</h3>
+          <p> Motivated IT graduate with hands-on experience in system analysis and technical support. Proficient in Python, C++, SQL, and web technologies, with a foundational understanding of data analysis and IT infrastructure. Completed an internship at Jet Stream Solutions, contributing to system optimization and documentation. Quick to learn new tools and adapt to collaborative environments, seeking to contribute to a dynamic technology team.</p>
+          <ul class="meta">
+            <li><strong>Location:</strong> Andheri East, Mumbai</li>
+            <li><strong>Email:</strong> jatanrajbhar34@gmail.com</li>
+            <li><strong>Phone:</strong> +91 9324814996</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">linkedin.com/in/jatanrajbhar</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/jatanrajbhar" target="_blank">github.com/jatanrajbhar</a></li>
+          </ul>
+        </div>
+
+        <div class="card skills">
+          <h3>Skills</h3>
+          <div class="skill-list">
+            <span>C++</span><span>SQL</span><span>Python</span><span>Power BI</span>
+            <span>CSS</span><span>JavaScript</span><span>HTML</span><span>Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <h3>Experience</h3>
+          <div class="exp-item">
+            <h4>System Analyst Intern — Jet Stream Solutions</h4>
+            <p class="muted">Jun 2022 - Oct 2023</p>
+            <ul>
+              <li>Identified system inefficiencies and collaborated with developers reducing downtime by 15%.</li>
+              <li>Feasibility studies and cost-benefit analyses for IT improvements.</li>
+              <li>Documentation and end-user training materials.</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <section class="main-col">
+        <div class="tabs">
+          <button class="tab active" data-tab="posts">Posts</button>
+          <button class="tab" data-tab="about">About</button>
+          <button class="tab" data-tab="projects">Projects</button>
+          <button class="tab" data-tab="photos">Photos</button>
+          <button class="tab" data-tab="friends">Friends</button>
+        </div>
+
+        <div class="tab-content" id="posts">
+          <div class="composer card">
+            <img class="mini-avatar" src="images/jatank.jpeg" alt="you" />
+            <input id="newPostText" placeholder="Share something about your work..." />
+            <div class="composer-actions">
+              <button class="btn" id="postBtn">Post</button>
+            </div>
+          </div>
+
+          <div id="feed">
+            <!-- Example post -->
+   <article class="post card" data-id="1">
+              <header class="post-head">
+                <img src="images/jatank.jpeg" class="mini-avatar" />
+                <div>
+                  <strong>Jatan Rajbhar</strong>
+                  <div class="muted small">Sathaye college, vile parle · march 2025</div>
+                </div>
+              </header>
+              <div class="post-body">
+                <p>Graduated from Sathaye college while pursuing bachelor's of Science in Information Technology and gained CGPA of 5.5.</p>
+              </div>
+              <footer class="post-footer">
+                <div class="reactions">
+                  <button class="like btn">👍 <span class="count">112</span></button>
+                  <button class="comment btn">💬 <span class="count">20</span></button>
+                  <button class="share btn">↪</button>
+                </div>
+                <div class="comments">
+                  <div class="comment-item">
+                    <strong>Ramesh</strong> Congrats!
+                  </div>
+                </div>
+              </footer>
+            </article>
+             <article class="post card" data-id="1">
+              <header class="post-head">
+                <img src="images/jatank.jpeg" class="mini-avatar" />
+                <div>
+                  <strong>Jatan Rajbhar</strong>
+                  <div class="muted small">Jet Stream Solution, vile parle · System alanyst trainee · june 2022</div>
+                </div>
+              </header>
+              <div class="post-body">
+                <p> Joined internship as a System Analyst at Jet Stream Solution and 1.8 years of proffesional experience</p>
+              </div>
+              <footer class="post-footer">
+                <div class="reactions">
+                  <button class="like btn">👍 <span class="count">50</span></button>
+                  <button class="comment btn">💬 <span class="count">8</span></button>
+                  <button class="share btn">↪</button>
+                </div>
+                <div class="comments">
+                  <div class="comment-item">
+                    <strong>Yuvraj</strong> Great work!
+                  </div>
+                </div>
+              </footer>
+            </article>
+
+            <article class="post card" data-id="1">
+              <header class="post-head">
+                <img src="images/jatank.jpeg" class="mini-avatar" />
+                <div>
+                  <strong>Jatan Rajbhar</strong>
+                  <div class="muted small">R.D. National college, bandra · march 2021</div>
+                </div>
+              </header>
+              <div class="post-body">
+                <p>Passed HSC examination held by Maharashtra state board of education from R.D. National college, bandra pursuing Science with 78 percentile.</p>
+              </div>
+              <footer class="post-footer">
+                <div class="reactions">
+                  <button class="like btn">👍 <span class="count">29</span></button>
+                  <button class="comment btn">💬 <span class="count">5</span></button>
+                  <button class="share btn">↪</button>
+                </div>
+                <div class="comments">
+                  <div class="comment-item">
+                    <strong>Vishal</strong> Congratulations
+                  </div>
+                </div>
+              </footer>
+            </article>
+             <article class="post card" data-id="1">
+              <header class="post-head">
+                <img src="images/jatank.jpeg" class="mini-avatar" />
+                <div>
+                  <strong>Jatan Rajbhar</strong>
+                  <div class="muted small">Holy family high school · March 2019</div>
+                </div>
+              </header>
+              <div class="post-body">
+                <p>Passed SSC examination held by Maharashtra board of edcucation from Holy family high school, Andheri.</p>
+              </div>
+              <footer class="post-footer">
+                <div class="reactions">
+                  <button class="like btn">👍 <span class="count">12</span></button>
+                  <button class="comment btn">💬 <span class="count">1</span></button>
+                  <button class="share btn">↪</button>
+                </div>
+                <div class="comments">
+                  <div class="comment-item">
+                    <strong>Aryan</strong> keep it up!
+                  </div>
+                </div>
+              </footer>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="tab-content hidden" id="about-tab">
+          <div class="card">
+            <h3>Education</h3>
+            <p><strong>Parle Tilak Vidyalaya Association, Sathaye College</strong><br/>B.Sc. Information Technology, Mumbai University | 2022 - 2025, CGPA: 5.25</p>
+            <p><strong>R.D. National College, Bandra</strong><br/>Higher Secondary (Science) | 2019 - 2021 | 77.23%</p>
+          </div>
+
+          <div class="card">
+            <h3>Projects</h3>
+            <ul>
+              <li><strong>Blood Bank Management System</strong> — Web app with donor/recipient registration, admin panel, PHP + MySQL.</li>
+              <li><strong>Zepto Data Analytics</strong> — SQL analytics portfolio project using an e-commerce dataset.</li>
+              <li><strong>Ola Data Analytics</strong> — SQL extraction, preparation, and business analytics queries.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content hidden" id="projects">
+          <div class="card project">
+            <h4>Blood Bank Management System</h4>
+            <p> A web-based application built in the final year of the college developed using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL. Enables blood donors and recipients to register and request blood online. Admin panel allows for data management and system updates.</p>
+          </div>
+          <div class="card project">
+            <h4>Zepto Data Analytics</h4>
+            <p>SQL-based e-commerce inventory analysis for portfolio; queries, dashboards, business insights.</p>
+            <p>https://github.com/jatanrajbhar/Data_Analyst_Portfolio_Project_On_Zepto</p>
+             <h4>Ola Data Analytics</h4>
+            <p> SQL for Data Extraction, Preparation using SQL. Answering Real business analytics questions </p>
+            <p>https://github.com/jatanrajbhar/Ola-Data-Analytics-Project</p>
+          </div>
+        </div>
+
+        <div class="tab-content hidden" id="photos">
+          <div class="photo-grid card">
+            <img src="images/1761340223800.jpg" alt="" />
+            <img src="images/1761340223817.jpg" alt="" />
+            <img src="images/1761340223836.jpg" alt="" />
+            <img src="images/1761340223850.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="tab-content hidden" id="friends">
+          <div class="card friends-list">
+            <div class="friend">
+              <img src="assets/friend1.jpg" alt="" />
+              <div>
+                <strong>Ramesh</strong>
+                <div class="muted small">Colleague</div>
+              </div>
+            </div>
+            <div class="friend">
+              <img src="assets/friend2.jpg" alt="" />
+              <div>
+                <strong>Aryan</strong>
+                <div class="muted small">Classmate</div>
+              </div>
+               <div class="friend">
+              <img src="assets/friend2.jpg" alt="" />
+              <div>
+                <strong>Vishal</strong>
+                <div class="muted small">Classmate</div>
+                 <div class="friend">
+              <img src="assets/friend2.jpg" alt="" />
+              <div>
+                <strong>Yuvraj</strong>
+                <div class="muted small">Classmate</div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="right-col">
+        <div class="card contact-cta">
+          <h4>Contact</h4>
+          <a class="btn primary wfull" href="mailto:jatanrajbhar34@gmail.com">Email</a>
+          <a class="btn outline wfull" href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">LinkedIn</a>
+          <a class="btn outline wfull" href="github.com/jatanrajbhar" target="_blank">GitHub</a>
+
+        </div>
+
+        <div class="card resume-card">
+          <h4>Resume</h4>
+          <p>Download a PDF or view details in the About tab.</p>
+          <a class="btn" href="resume/jatanrajbhar resume_20251021_163501_0000.pdf" download>Download</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
