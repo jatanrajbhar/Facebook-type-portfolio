@@ -1,10 +1,8 @@
-// Basic interactivity: tabs, posting, likes, comments, connect/message toggles
 document.getElementById('messageBtn').addEventListener('click', function() {
     window.location.href = 'mailto:jatanrajbhar34@gmail.com?subject=Portfolio Inquiry&body=Hi Jatan, I saw your portfolio and...';
 });
 
 document.addEventListener('DOMContentLoaded', function(){
-  // Tabs
   const tabs = document.querySelectorAll('.tab');
   const contents = {
     posts: document.getElementById('posts'),
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  // Post creation
   const postBtn = document.getElementById('postBtn');
   const newPostText = document.getElementById('newPostText');
   const feed = document.getElementById('feed');
@@ -56,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function(){
     newPostText.value = '';
   });
 
-  // Delegate likes and comments
   feed.addEventListener('click', function(e){
     const likeBtn = e.target.closest('.like');
     if(likeBtn){
@@ -82,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  // Connect / Message toggles
   document.getElementById('followBtn').addEventListener('click', function(){
     this.classList.toggle('primary');
     this.textContent = this.classList.contains('primary') ? 'Connected' : 'Connect';
@@ -92,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function(){
     location.href = mail;
   });
 
-  // small helper
   function escapeHtml(str){
     return str.replace(/[&<>"']/g, (m)=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
   }
 });
+
