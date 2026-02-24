@@ -2,303 +2,440 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Replace with Facebook-like font if needed -->
-    <style>
-      @import 'C:\Users\rashm\OneDrive\Documents\face port\style.css';
-      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\cover.jpg';
-      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\jatank.jpeg';
-      @import 'C:\Users\rashm\OneDrive\Documents\face port\images\log.png';
-    </style>
-    <title>port</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Jatan Rajbhar — Portfolio</title>
   </head>
-<body>
-  <header class="topbar">
-    <div class="topbar-left">
-      <img src="images/logo.png" alt="Portfolio Logo" class="logo" />
-      <div class="search-box">
-        <input type="search" placeholder="Search portfolio..." id="globalSearch" />
-      </div>
-    </div>
-    <nav class="topbar-right">
-      <div class="profile-short">
-        <img src="images/jatank.jpeg" alt="Jatan" />
-        <span>Jatan Rajbhar</span>
-      </div>
-    </nav>
-  </header>
+  <body>
 
-  <main class="profile-page">
-    <section class="cover-area">
-      <img src="images/cover2.png" alt="Cover" class="cover-photo" />
-      <div class="cover-controls">
-        <button class="btn small">Edit Cover</button>
-      </div>
-      <div class="profile-card">
-        <img class="avatar" src="images/jatank.jpeg" alt="profile" />
-        <div class="profile-info">
-          <h1>Jatan Rajbhar</h1>
-          <p class="muted">B.Sc. IT Graduate · System Analyst Intern · Aspiring Data Analyst | Web Devloper</p>
-          <div class="action-row">
-            <button id="messageBtn" class="btn primary">Message</button>
-            <button id="followBtn" class="btn outline">Connect</button>
-            <button class="btn icon">⋯</button>
-          </div>
+    <header class="topbar">
+      <div class="topbar-left">
+        <img src="images/logo.png" alt="Portfolio Logo" class="logo" />
+        <div class="search-box">
+          <span class="search-icon">&#128269;</span>
+          <input type="search" placeholder="Search portfolio..." id="globalSearch" autocomplete="off" />
         </div>
       </div>
-    </section>
-
-    <section class="content-wrap">
-      <aside class="left-col">
-        <div class="card about">
-          <h3>About</h3>
-          <p> Motivated IT graduate with hands-on experience in system analysis and technical support. Proficient in Python, C++, SQL, and web technologies, with a foundational understanding of data analysis and IT infrastructure. Completed an internship at Jet Stream Solutions, contributing to system optimization and documentation. Quick to learn new tools and adapt to collaborative environments, seeking to contribute to a dynamic technology team.</p>
-          <ul class="meta">
-            <li><strong>Location:</strong> Andheri East, Mumbai</li>
-            <li><strong>Email:</strong> jatanrajbhar34@gmail.com</li>
-            <li><strong>Phone:</strong> +91 9324814996</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">linkedin.com/in/jatanrajbhar</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/jatanrajbhar" target="_blank">github.com/jatanrajbhar</a></li>
-          </ul>
+      <nav class="topbar-right">
+        <div class="profile-short">
+          <img src="images/jatank.jpeg" alt="Jatan Rajbhar" />
+          <span>Jatan Rajbhar</span>
         </div>
+      </nav>
+    </header>
 
-        <div class="card skills">
-          <h3>Skills</h3>
-          <div class="skill-list">
-            <span>C++</span><span>SQL</span><span>Python</span><span>Power BI</span>
-            <span>CSS</span><span>JavaScript</span><span>HTML</span><span>Bootstrap</span>
-          </div>
-        </div>
+    <main class="profile-page">
 
-        <div class="card experience">
-          <h3>Experience</h3>
-          <div class="exp-item">
-            <h4>System Analyst Intern — Jet Stream Solutions</h4>
-            <p class="muted">Jun 2022 - Oct 2023</p>
-            <ul>
-              <li>Identified system inefficiencies and collaborated with developers reducing downtime by 15%.</li>
-              <li>Feasibility studies and cost-benefit analyses for IT improvements.</li>
-              <li>Documentation and end-user training materials.</li>
-            </ul>
-          </div>
-        </div>
-      </aside>
-
-      <section class="main-col">
-        <div class="tabs">
-          <button class="tab active" data-tab="posts">Posts</button>
-          <button class="tab" data-tab="about">About</button>
-          <button class="tab" data-tab="projects">Projects</button>
-          <button class="tab" data-tab="photos">Photos</button>
-          <button class="tab" data-tab="friends">Friends</button>
-        </div>
-
-        <div class="tab-content" id="posts">
-          <div class="composer card">
-            <img class="mini-avatar" src="images/jatank.jpeg" alt="you" />
-            <input id="newPostText" placeholder="Share something about your work..." />
-            <div class="composer-actions">
-              <button class="btn" id="postBtn">Post</button>
-            </div>
-          </div>
-
-          <div id="feed">
-   <article class="post card" data-id="1">
-              <header class="post-head">
-                <img src="images/jatank.jpeg" class="mini-avatar" />
-                <div>
-                  <strong>Jatan Rajbhar</strong>
-                  <div class="muted small">Sathaye college, vile parle · march 2025</div>
-                </div>
-              </header>
-              <div class="post-body">
-                <p>Graduated from Sathaye college while pursuing bachelor's of Science in Information Technology and gained CGPA of 5.5.</p>
-              </div>
-              <footer class="post-footer">
-                <div class="reactions">
-                  <button class="like btn">👍 <span class="count">112</span></button>
-                  <button class="comment btn">💬 <span class="count">20</span></button>
-                  <button class="share btn">↪</button>
-                </div>
-                <div class="comments">
-                  <div class="comment-item">
-                    <strong>Ramesh</strong> Congrats!
-                  </div>
-                </div>
-              </footer>
-            </article>
-             <article class="post card" data-id="1">
-              <header class="post-head">
-                <img src="images/jatank.jpeg" class="mini-avatar" />
-                <div>
-                  <strong>Jatan Rajbhar</strong>
-                  <div class="muted small">Jet Stream Solution, vile parle · System alanyst trainee · june 2022</div>
-                </div>
-              </header>
-              <div class="post-body">
-                <p> Joined internship as a System Analyst at Jet Stream Solution and 1.8 years of proffesional experience</p>
-              </div>
-              <footer class="post-footer">
-                <div class="reactions">
-                  <button class="like btn">👍 <span class="count">50</span></button>
-                  <button class="comment btn">💬 <span class="count">8</span></button>
-                  <button class="share btn">↪</button>
-                </div>
-                <div class="comments">
-                  <div class="comment-item">
-                    <strong>Yuvraj</strong> Great work!
-                  </div>
-                </div>
-              </footer>
-            </article>
-
-            <article class="post card" data-id="1">
-              <header class="post-head">
-                <img src="images/jatank.jpeg" class="mini-avatar" />
-                <div>
-                  <strong>Jatan Rajbhar</strong>
-                  <div class="muted small">R.D. National college, bandra · march 2021</div>
-                </div>
-              </header>
-              <div class="post-body">
-                <p>Passed HSC examination held by Maharashtra state board of education from R.D. National college, bandra pursuing Science with 78 percentile.</p>
-              </div>
-              <footer class="post-footer">
-                <div class="reactions">
-                  <button class="like btn">👍 <span class="count">29</span></button>
-                  <button class="comment btn">💬 <span class="count">5</span></button>
-                  <button class="share btn">↪</button>
-                </div>
-                <div class="comments">
-                  <div class="comment-item">
-                    <strong>Vishal</strong> Congratulations
-                  </div>
-                </div>
-              </footer>
-            </article>
-             <article class="post card" data-id="1">
-              <header class="post-head">
-                <img src="images/jatank.jpeg" class="mini-avatar" />
-                <div>
-                  <strong>Jatan Rajbhar</strong>
-                  <div class="muted small">Holy family high school · March 2019</div>
-                </div>
-              </header>
-              <div class="post-body">
-                <p>Passed SSC examination held by Maharashtra board of edcucation from Holy family high school, Andheri.</p>
-              </div>
-              <footer class="post-footer">
-                <div class="reactions">
-                  <button class="like btn">👍 <span class="count">12</span></button>
-                  <button class="comment btn">💬 <span class="count">1</span></button>
-                  <button class="share btn">↪</button>
-                </div>
-                <div class="comments">
-                  <div class="comment-item">
-                    <strong>Aryan</strong> keep it up!
-                  </div>
-                </div>
-              </footer>
-            </article>
-
-          </div>
-        </div>
-
-        <div class="tab-content hidden" id="about-tab">
-          <div class="card">
-            <h3>Education</h3>
-            <p><strong>Parle Tilak Vidyalaya Association, Sathaye College</strong><br/>B.Sc. Information Technology, Mumbai University | 2022 - 2025, CGPA: 5.25</p>
-            <p><strong>R.D. National College, Bandra</strong><br/>Higher Secondary (Science) | 2019 - 2021 | 77.23%</p>
-          </div>
-
-          <div class="card">
-            <h3>Projects</h3>
-            <ul>
-              <li><strong>Blood Bank Management System</strong> — Web app with donor/recipient registration, admin panel, PHP + MySQL.</li>
-              <li><strong>Zepto Data Analytics</strong> — SQL analytics portfolio project using an e-commerce dataset.</li>
-              <li><strong>Ola Data Analytics</strong> — SQL extraction, preparation, and business analytics queries.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tab-content hidden" id="projects">
-          <div class="card project">
-            <h4>Blood Bank Management System</h4>
-            <p> A web-based application built in the final year of the college developed using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL. Enables blood donors and recipients to register and request blood online. Admin panel allows for data management and system updates.</p>
-          </div>
-          <div class="card project">
-            <h4>Zepto Data Analytics</h4>
-            <p>SQL-based e-commerce inventory analysis for portfolio; queries, dashboards, business insights.</p>
-            <p>https://github.com/jatanrajbhar/Data_Analyst_Portfolio_Project_On_Zepto</p>
-             <h4>Ola Data Analytics</h4>
-            <p> SQL for Data Extraction, Preparation using SQL. Answering Real business analytics questions </p>
-            <p>https://github.com/jatanrajbhar/Ola-Data-Analytics-Project</p>
-          </div>
-        </div>
-
-        <div class="tab-content hidden" id="photos">
-          <div class="photo-grid card">
-            <img src="images/1761340223800.jpg" alt="" />
-            <img src="images/1761340223817.jpg" alt="" />
-            <img src="images/1761340223836.jpg" alt="" />
-            <img src="images/1761340223850.jpg" alt="" />
-          </div>
-        </div>
-
-        <div class="tab-content hidden" id="friends">
-          <div class="card friends-list">
-            <div class="friend">
-              <img src="assets/friend1.jpg" alt="" />
-              <div>
-                <strong>Ramesh</strong>
-                <div class="muted small">Colleague</div>
-              </div>
-            </div>
-            <div class="friend">
-              <img src="assets/friend2.jpg" alt="" />
-              <div>
-                <strong>Aryan</strong>
-                <div class="muted small">Classmate</div>
-              </div>
-               <div class="friend">
-              <img src="assets/friend2.jpg" alt="" />
-              <div>
-                <strong>Vishal</strong>
-                <div class="muted small">Classmate</div>
-                 <div class="friend">
-              <img src="assets/friend2.jpg" alt="" />
-              <div>
-                <strong>Yuvraj</strong>
-                <div class="muted small">Classmate</div>
-              </div>
-              </div>
+      <!-- Cover + Profile Card -->
+      <section class="cover-area">
+        <img src="images/cover2.png" alt="Cover" class="cover-photo" />
+        <div class="profile-card">
+          <img class="avatar" src="images/jatank.jpeg" alt="Jatan Rajbhar" />
+          <div class="profile-info">
+            <h1>Jatan Rajbhar</h1>
+            <p class="subtitle">B.Sc. IT Graduate &middot; Developer &middot; Aspiring Data Analyst</p>
+            <p class="location muted"><span>&#128205;</span> Andheri East, Mumbai</p>
+            <div class="action-row">
+              <button id="messageBtn" class="btn primary">&#9993; Message</button>
+              <button id="followBtn" class="btn outline">+ Connect</button>
+              <a class="btn outline" href="resume/jatanrajbhar resume (4).pdf" download>&#8595; Resume</a>
             </div>
           </div>
         </div>
-
       </section>
 
-      <aside class="right-col">
-        <div class="card contact-cta">
-          <h4>Contact</h4>
-          <a class="btn primary wfull" href="mailto:jatanrajbhar34@gmail.com">Email</a>
-          <a class="btn outline wfull" href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">LinkedIn</a>
-          <a class="btn outline wfull" href="github.com/jatanrajbhar" target="_blank">GitHub</a>
+      <!-- 3-Column Layout -->
+      <section class="content-wrap">
 
-        </div>
+        <!-- LEFT COLUMN -->
+        <aside class="left-col">
 
-        <div class="card resume-card">
-          <h4>Resume</h4>
-          <p>Download a PDF or view details in the About tab.</p>
-          <a class="btn" href="resume/jatanrajbhar resume (4).pdf" download>Download</a>
-        </div>
-      </aside>
-    </section>
-  </main>
+          <div class="card about">
+            <h3>About</h3>
+            <p>Motivated IT graduate with hands-on experience in software development and system analysis. Currently building Python automation tools at GSC Intime Services. Proficient in SQL, Python, and web technologies. Seeking to contribute to a dynamic technology team.</p>
+            <ul class="meta">
+              <li><span class="meta-icon">&#128205;</span><span><strong>Location:</strong> Andheri East, Mumbai</span></li>
+              <li><span class="meta-icon">&#9993;</span><span><strong>Email:</strong> <a href="mailto:jatanrajbhar34@gmail.com">jatanrajbhar34@gmail.com</a></span></li>
+              <li><span class="meta-icon">&#128222;</span><span><strong>Phone:</strong> +91 9324814996</span></li>
+              <li><span class="meta-icon">&#128279;</span><span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">linkedin.com/in/jatanrajbhar</a></span></li>
+              <li><span class="meta-icon">&#128187;</span><span><strong>GitHub:</strong> <a href="https://github.com/jatanrajbhar" target="_blank">github.com/jatanrajbhar</a></span></li>
+            </ul>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="card skills">
+            <h3>Skills</h3>
+            <div class="skill-list">
+              <div class="skill-badge"><span class="skill-name">SQL</span><span class="level advanced">Advanced</span></div>
+              <div class="skill-badge"><span class="skill-name">HTML</span><span class="level advanced">Advanced</span></div>
+              <div class="skill-badge"><span class="skill-name">CSS</span><span class="level advanced">Advanced</span></div>
+              <div class="skill-badge"><span class="skill-name">Python</span><span class="level intermediate">Intermediate</span></div>
+              <div class="skill-badge"><span class="skill-name">JavaScript</span><span class="level intermediate">Intermediate</span></div>
+              <div class="skill-badge"><span class="skill-name">C++</span><span class="level intermediate">Intermediate</span></div>
+              <div class="skill-badge"><span class="skill-name">MS Excel</span><span class="level intermediate">Intermediate</span></div>
+              <div class="skill-badge"><span class="skill-name">Power BI</span><span class="level intermediate">Intermediate</span></div>
+            </div>
+          </div>
+
+          <div class="card experience">
+            <h3>Experience</h3>
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-dot current"></div>
+                <div>
+                  <h4>Developer</h4>
+                  <p class="company">GSC Intime Services Pvt. Ltd.</p>
+                  <p class="muted small">Jan 2026 &ndash; Present</p>
+                </div>
+              </div>
+              <ul>
+                <li>Built Python tools to reduce time for chartered accountants.</li>
+                <li>Developed a full-stack Office Management Portal.</li>
+                <li>Created Excel macros for large dataset automation.</li>
+              </ul>
+            </div>
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-dot"></div>
+                <div>
+                  <h4>System Analyst Intern</h4>
+                  <p class="company">Jet Stream Solutions</p>
+                  <p class="muted small">Jun 2022 &ndash; Oct 2023</p>
+                </div>
+              </div>
+              <ul>
+                <li>Identified system inefficiencies and collaborated with developers.</li>
+                <li>Facilitated communication between stakeholders.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card achievements">
+            <h3>Achievements</h3>
+            <div class="achievement-item">
+              <div class="achievement-icon">&#127942;</div>
+              <div>
+                <strong>Captain, College Powerlifting Team</strong>
+                <p class="muted small">2024&ndash;25 &middot; Led team from district to state-level championship</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-icon">&#129352;</div>
+              <div>
+                <strong>State Powerlifter Medalist 2024</strong>
+                <p class="muted small">2nd Place &middot; Maharashtra Powerlifting Association</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-icon">&#129352;</div>
+              <div>
+                <strong>Inter-Collegiate Powerlifting</strong>
+                <p class="muted small">2nd Place &middot; Ramniranjan Jhunjhunwala College</p>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- MAIN COLUMN -->
+        <section class="main-col">
+
+          <div class="tabs">
+            <button class="tab active" data-tab="posts">Posts</button>
+            <button class="tab" data-tab="about">About</button>
+            <button class="tab" data-tab="projects">Projects</button>
+            <button class="tab" data-tab="photos">Photos</button>
+          </div>
+
+          <!-- POSTS TAB -->
+          <div class="tab-content" id="posts">
+            <div class="composer card">
+              <img class="mini-avatar" src="images/jatank.jpeg" alt="Jatan" />
+              <input id="newPostText" placeholder="Share something about your work..." />
+              <button class="btn primary" id="postBtn">Post</button>
+            </div>
+
+            <div id="feed">
+
+              <article class="post card" data-id="1">
+                <header class="post-head">
+                  <img src="images/jatank.jpeg" class="mini-avatar" alt="Jatan" />
+                  <div>
+                    <strong>Jatan Rajbhar</strong>
+                    <div class="muted small">GSC Intime Services &middot; January 2026</div>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <p>Excited to join GSC Intime Services Pvt. Ltd. as a Developer! Building Python automation tools and a full-stack Office Management Portal. Loving the challenge of building things that save real time for people. &#128188;</p>
+                </div>
+                <footer class="post-footer">
+                  <div class="reactions">
+                    <button class="like btn">&#128077; <span class="count">87</span></button>
+                    <button class="comment btn">&#128172; <span class="count">14</span></button>
+                    <button class="share btn">&#8599; Share</button>
+                  </div>
+                  <div class="comments">
+                    <div class="comment-item"><strong>Ramesh</strong> Congratulations Jatan! &#127881;</div>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="post card" data-id="2">
+                <header class="post-head">
+                  <img src="images/jatank.jpeg" class="mini-avatar" alt="Jatan" />
+                  <div>
+                    <strong>Jatan Rajbhar</strong>
+                    <div class="muted small">Sathaye College, Vile Parle &middot; March 2025</div>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <p>Graduated with a B.Sc. in Information Technology from Sathaye College, Mumbai University (CGPA: 5.25). Grateful for every project, challenge, and late-night debugging session that shaped my skills. &#127891;</p>
+                </div>
+                <footer class="post-footer">
+                  <div class="reactions">
+                    <button class="like btn">&#128077; <span class="count">112</span></button>
+                    <button class="comment btn">&#128172; <span class="count">20</span></button>
+                    <button class="share btn">&#8599; Share</button>
+                  </div>
+                  <div class="comments">
+                    <div class="comment-item"><strong>Yuvraj</strong> Congrats bro! &#127881;</div>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="post card" data-id="3">
+                <header class="post-head">
+                  <img src="images/jatank.jpeg" class="mini-avatar" alt="Jatan" />
+                  <div>
+                    <strong>Jatan Rajbhar</strong>
+                    <div class="muted small">Maharashtra Powerlifting Association &middot; 2024</div>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <p>Secured 2nd place at the State Powerlifting Championship 2024! As team captain, I also led our college team from district to state level. Strength is built one rep at a time. &#127947;</p>
+                </div>
+                <footer class="post-footer">
+                  <div class="reactions">
+                    <button class="like btn">&#128077; <span class="count">203</span></button>
+                    <button class="comment btn">&#128172; <span class="count">31</span></button>
+                    <button class="share btn">&#8599; Share</button>
+                  </div>
+                  <div class="comments">
+                    <div class="comment-item"><strong>Aryan</strong> Beast mode! &#128170;</div>
+                  </div>
+                </footer>
+              </article>
+
+              <article class="post card" data-id="4">
+                <header class="post-head">
+                  <img src="images/jatank.jpeg" class="mini-avatar" alt="Jatan" />
+                  <div>
+                    <strong>Jatan Rajbhar</strong>
+                    <div class="muted small">Jet Stream Solutions &middot; June 2022</div>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <p>Starting my professional journey as a System Analyst Intern at Jet Stream Solutions! Ready to identify inefficiencies and help build better systems. Exciting 1.8 years ahead. &#128640;</p>
+                </div>
+                <footer class="post-footer">
+                  <div class="reactions">
+                    <button class="like btn">&#128077; <span class="count">50</span></button>
+                    <button class="comment btn">&#128172; <span class="count">8</span></button>
+                    <button class="share btn">&#8599; Share</button>
+                  </div>
+                  <div class="comments">
+                    <div class="comment-item"><strong>Vishal</strong> Great work! &#128079;</div>
+                  </div>
+                </footer>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- ABOUT TAB -->
+          <div class="tab-content hidden" id="about-tab">
+            <div class="card">
+              <h3>Education</h3>
+              <div class="edu-item">
+                <div class="edu-icon">&#127891;</div>
+                <div>
+                  <strong>Parle Tilak Vidyalaya Association, Sathaye College</strong>
+                  <p class="muted small">B.Sc. Information Technology &middot; Mumbai University &middot; 2022&ndash;2025</p>
+                  <p class="muted small">CGPA: 5.25</p>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-icon">&#128218;</div>
+                <div>
+                  <strong>R.D. National College, Bandra</strong>
+                  <p class="muted small">Higher Secondary (Science Stream) &middot; Maharashtra Board &middot; 2019&ndash;2021</p>
+                  <p class="muted small">Score: 77.23% &middot; Grade: A</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Work Experience</h3>
+              <div class="edu-item">
+                <div class="edu-icon">&#128188;</div>
+                <div>
+                  <strong>Developer &mdash; GSC Intime Services Pvt. Ltd.</strong>
+                  <p class="muted small">January 2026 &ndash; Present</p>
+                  <ul>
+                    <li>Python tools for chartered accountants</li>
+                    <li>Full-stack Office Management Portal (Node.js + MySQL)</li>
+                    <li>Excel macro automation for large datasets</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-icon">&#128188;</div>
+                <div>
+                  <strong>System Analyst Intern &mdash; Jet Stream Solutions</strong>
+                  <p class="muted small">June 2022 &ndash; October 2023</p>
+                  <ul>
+                    <li>System inefficiency analysis and resolution</li>
+                    <li>Stakeholder communication facilitation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Achievements</h3>
+              <div class="edu-item">
+                <div class="edu-icon">&#127942;</div>
+                <div>
+                  <strong>Captain, College Powerlifting Team 2024&ndash;25</strong>
+                  <p class="muted small">Led the team from district level to state-level inter-collegiate championship</p>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-icon">&#129352;</div>
+                <div>
+                  <strong>State Powerlifter Medalist 2024</strong>
+                  <p class="muted small">2nd Place at the Maharashtra Powerlifting Association state championship</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECTS TAB -->
+          <div class="tab-content hidden" id="projects">
+
+            <div class="card project-card">
+              <div class="project-header">
+                <h4>Office Management Portal</h4>
+                <div class="tech-tags">
+                  <span>Node.js</span><span>Express</span><span>MySQL</span><span>JavaScript</span>
+                </div>
+              </div>
+              <p>A single-page application for internal office management &mdash; tasks, calendar events, leave requests, notifications, and team dashboards. Backed by a Node.js/Express REST API with a MySQL database.</p>
+              <a href="https://github.com/jatanrajbhar" target="_blank" class="project-link">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="card project-card">
+              <div class="project-header">
+                <h4>GST Reconciliation &amp; E-Invoice Tool</h4>
+                <div class="tech-tags">
+                  <span>Python</span><span>Desktop App</span><span>Automation</span>
+                </div>
+              </div>
+              <p>A portable desktop application for automated GST and E-Invoice reconciliation. Helps businesses efficiently match, validate, and reconcile transactions across multiple document types.</p>
+              <a href="https://github.com/jatanrajbhar" target="_blank" class="project-link">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="card project-card">
+              <div class="project-header">
+                <h4>PDF Redact &amp; Merge Tool</h4>
+                <div class="tech-tags">
+                  <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Client-side</span>
+                </div>
+              </div>
+              <p>A powerful browser-based tool for redacting sensitive information from PDF documents and merging multiple PDFs. Runs entirely client-side with no server uploads or data transmission.</p>
+              <a href="https://github.com/jatanrajbhar" target="_blank" class="project-link">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="card project-card">
+              <div class="project-header">
+                <h4>BookMyDoc &mdash; Doctor's Appointment System</h4>
+                <div class="tech-tags">
+                  <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                </div>
+              </div>
+              <p>A simple, responsive, and user-friendly web-based system to manage doctor appointments online. Designed for accessibility and ease of use.</p>
+              <a href="https://github.com/jatanrajbhar" target="_blank" class="project-link">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="card project-card">
+              <div class="project-header">
+                <h4>Zepto &amp; OLA Data Analytics</h4>
+                <div class="tech-tags">
+                  <span>SQL</span><span>Data Analysis</span><span>Power BI</span>
+                </div>
+              </div>
+              <p>Real-world data analyst portfolio projects using e-commerce (Zepto) and ride-sharing (OLA) datasets. Showcases SQL data cleaning, business queries, and insights extraction.</p>
+              <div class="project-links">
+                <a href="https://github.com/jatanrajbhar/Data_Analyst_Portfolio_Project_On_Zepto" target="_blank" class="project-link">Zepto &rarr;</a>
+                <a href="https://github.com/jatanrajbhar/Ola-Data-Analytics-Project" target="_blank" class="project-link">OLA &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PHOTOS TAB -->
+          <div class="tab-content hidden" id="photos">
+            <div class="photo-grid card">
+              <img src="images/1761340223800.jpg" alt="Photo 1" />
+              <img src="images/1761340223817.jpg" alt="Photo 2" />
+              <img src="images/1761340223836.jpg" alt="Photo 3" />
+              <img src="images/1761340223850.jpg" alt="Photo 4" />
+            </div>
+          </div>
+
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <aside class="right-col">
+
+          <div class="card contact-cta">
+            <h4>Contact Jatan</h4>
+            <a class="btn primary wfull" href="mailto:jatanrajbhar34@gmail.com">&#9993; Send Email</a>
+            <a class="btn outline wfull" href="https://www.linkedin.com/in/jatanrajbhar" target="_blank">&#128279; LinkedIn</a>
+            <a class="btn outline wfull" href="https://github.com/jatanrajbhar" target="_blank">&#128187; GitHub</a>
+          </div>
+
+          <div class="card resume-card">
+            <h4>Resume</h4>
+            <p class="muted small">Download Jatan's latest resume as a PDF.</p>
+            <a class="btn primary wfull" href="resume/jatanrajbhar resume (4).pdf" download>&#8595; Download CV</a>
+          </div>
+
+          <div class="card stats-card">
+            <h4>Quick Stats</h4>
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="muted small">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="muted small">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8</span>
+              <span class="muted small">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">&#129352;</span>
+              <span class="muted small">State Powerlifting Medalist</span>
+            </div>
+          </div>
+
+        </aside>
+
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
