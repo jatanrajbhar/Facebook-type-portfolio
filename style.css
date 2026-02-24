@@ -234,7 +234,9 @@ a:hover { text-decoration: underline; }
   color: #444;
 }
 .meta li:last-child { border-bottom: none; }
-.meta-icon { width: 20px; text-align: center; flex-shrink: 0; font-size: 14px; }
+.meta-icon { width: 16px; height: 16px; text-align: center; flex-shrink: 0; font-size: 14px; line-height: 1; }
+img.meta-icon { object-fit: contain; vertical-align: middle; }
+.btn-icon { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; flex-shrink: 0; }
 .meta strong { color: var(--text); }
 
 /* Skills */
