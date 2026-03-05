@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ── Tab Switching ─────────────────────────────────────── */
+  /*  Tab Switching  */
   const tabs = document.querySelectorAll('.tab');
   const tabContents = {
     posts:    document.getElementById('posts'),
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ── Connect Button ────────────────────────────────────── */
+  /*  Connect Button  */
   const followBtn = document.getElementById('followBtn');
   followBtn.addEventListener('click', function () {
     const connected = this.classList.contains('primary');
@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
     this.textContent = connected ? '+ Connect' : '✓ Connected';
   });
 
-  /* ── Message Button ────────────────────────────────────── */
+  /*  Message Button  */
   document.getElementById('messageBtn').addEventListener('click', function () {
     window.location.href =
       'mailto:jatanrajbhar34@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Jatan%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.';
   });
 
-  /* ── Post Composer ─────────────────────────────────────── */
+  /*  Post Composer  */
   const postBtn     = document.getElementById('postBtn');
   const newPostText = document.getElementById('newPostText');
   const feed        = document.getElementById('feed');
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── Feed Interactions (Like / Comment / Share) ─────────── */
+  /*  Feed Interactions (Like / Comment / Share)  */
   feed.addEventListener('click', function (e) {
 
     // Like
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ── Global Search (filters posts by text) ─────────────── */
+  /*  Global Search (filters posts by text)  */
   document.getElementById('globalSearch').addEventListener('input', function () {
     const query = this.value.trim().toLowerCase();
     document.querySelectorAll('.post').forEach(post => {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ── Utility ───────────────────────────────────────────── */
+  /*  Utility  */
   function escapeHtml(str) {
     return str.replace(/[&<>"']/g, m => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
